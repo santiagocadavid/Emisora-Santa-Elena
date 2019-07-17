@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Emisora de Santa Elena</title>
+    <link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
+    <link href="./css/css.css" rel="stylesheet" />
+    <link href="./css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous"/>
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./img/gif electronica.gif" alt="" width="30%" 
+                height="auto">
+            <h2>Emisora de Santa Elena </h2>
+            <p class="lead">Buena musica</p>
+        </div>
+        <audio id="emisora">
+            <source src="http://65.60.45.74:8070/;"  type="audio/mpeg"/> 
+            Su buscador no soporta este audio html5.
+        </audio>  
+    <div class="row text-center">
+        <!--crear una fila-->
+        <div class="col">
+            <!--col-columna-->
+            <button type="button" class="btn btn-primary"  id="play">
+                <!--sacado de buttoms de bootstrap-->
+                <i class="fa fa-play"></i>
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" id="pausa">
+                <i class='fas fa-pause'></i>
+            </button>
+        </div>
+    </div>
+    <!--
+    <div class="row text-center">
+        
+        <div class="col">
+        
+            <button type="button" class="btn btn-primary" id="volumemas">
+        
+                <i class='fas fa-plus'></i>
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" id="volumemenos">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div> -->
+        <div class="col" >
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="custom-range" id="myRange">
+            </div>    
+        </div>    
+
+
+
+    </div>
+    <div class="py-1 text-center">
+        <!--py lo pone vertical, px-->
+        <img class="d-block mx-auto mb-4" src="./img/Electronica.png" alt="" width="55%" height="auto" />
+        <!--d-block para mostrar la imagen-->
+    </div>
+    <div class="footer">
+        <p>2019</p>
+            <hr>
+            <p>Proyecto de clase de Santiago Cadavid</p>
+      </div>
+
+</div>
+
+
+    <!--llamado al javascript-->
+    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-material-design.js"></script>
+    <script type="text/javascript" src="./js/fastclick.js"></script>
+    <script type="text/javascript" src="./js/gestures.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>
+<link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
+<link href="./css/css.css" rel="stylesheet" />
