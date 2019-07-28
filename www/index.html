@@ -4,81 +4,109 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Emisora de Santa Elena</title>
+    <title>Latin music</title>
     <link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
     <link href="./css/css.css" rel="stylesheet" />
     <link href="./css/estilos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous"/>
-    
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous" />
+
 </head>
 
-<body>
+<body>       
 
     <div class="container">
-
-        
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="./img/gif electronica.gif" alt="" width="30%" 
-                height="auto">
-            <h2>Emisora de Santa Elena </h2>
-            <p class="lead">Buena musica</p>
+            <img class="d-block mx-auto mb-4" src="./img/gif electronica.gif" alt="" width="30%" height="auto">
+            <h2><p style="color:blue;">Latin music</p> </h2>
+            <br>
+            <h3><p style="color:black;">Buena musica</p> </h3>
         </div>
-        <audio id="emisora">
-            <source src="http://65.60.45.74:8070/;"  type="audio/mpeg"/> 
-            Su buscador no soporta este audio html5.
-        </audio>  
-    <div class="row text-center">
+        <select name="radios" id="radios" autoplay>
+            <option value="0">Radio 1</option>
+            <option value="1">Vallenato ventiao</option>
+            <option value="2">El sol</option>
+            <option value="3">Latina Estereo</option>
+            <option value="4">Enlace 88.0 FM</option>
+            <option value="5">La Z Urbana</option>
+            <option value="5">Besame</option>
+        </select>
+        <div class="row text-center">
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="Ant_emisora">
+
+                    <i class='fas fa-angle-left'></i>
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="Sig_emisora">
+                    <i class='fas fa-angle-right'></i>
+                </button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <!--col-columna-->
+                <button type="button" class="btn btn-primary" id="play">
+                    <!--sacado de buttoms de bootstrap-->
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="pausa">
+                    <i class='fas fa-pause'></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.youtube.com/watch?v=nCkpzqqog4k"
+                        class="icon icon-facebook2" target="blank"></a></li>
+                <li><a href="https://api.instagram.com/v1/self/media/recent?access_token=ACCESS_TOKEN"
+                        class="icon icon-instagram" target="blank"></a></li>
+                <li><a href="http://www." class="icon icon icon-twitter" target="blank"></a></li>
+                <li><a href="https://wa.me/?text=youtube.com" class="icon icon-whatsapp" target="blank"></a></li>
+            </ul>
+
+        </div>
+
         <!--crear una fila-->
-        <div class="col">
-            <!--col-columna-->
-            <button type="button" class="btn btn-primary"  id="play">
-                <!--sacado de buttoms de bootstrap-->
-                <i class="fa fa-play"></i>
-            </button>
-        </div>
-        <div class="col">
-            <button type="button" class="btn btn-primary" id="pausa">
-                <i class='fas fa-pause'></i>
-            </button>
-        </div>
-    </div>
-    <!--
-    <div class="row text-center">
-        
-        <div class="col">
-        
-            <button type="button" class="btn btn-primary" id="volumemas">
-        
-                <i class='fas fa-plus'></i>
-            </button>
-        </div>
+
+        <div class="row text-center">
+
+            <!--
         <div class="col">
             <button type="button" class="btn btn-primary" id="volumemenos">
                 <i class="fa fa-minus"></i>
             </button>
         </div> -->
-        <div class="col" >
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="custom-range" id="myRange">
-            </div>    
-        </div>    
+            <div class="col">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="custom-range" id="myRange">
+                </div>
+            </div>
 
-
+        </div>
+        <div class="py-1 text-center">
+            <!--py lo pone vertical, px-->
+            <img class="d-block mx-auto mb-4" src="./img/imagen.jpg" alt="" width="1110" height="180" />
+            <!--d-block para mostrar la imagen-->
+        </div>
+        <div class="footer">
+            <p>
+                <h5>Santiago Cadavid, Kelly Gómez & Victor Mora 2019 ©</h5>
+            </p>
+        </div>
 
     </div>
-    <div class="py-1 text-center">
-        <!--py lo pone vertical, px-->
-        <img class="d-block mx-auto mb-4" src="./img/Electronica.png" alt="" width="55%" height="auto" />
-        <!--d-block para mostrar la imagen-->
-    </div>
-    <div class="footer">
-        <p>2019</p>
-            <hr>
-            <p>Proyecto de clase de Santiago Cadavid</p>
-      </div>
 
-</div>
-
+    <audio id="emisora">
+        <source src="http://198.27.68.65:8296/stream" type="audio/mpeg" />
+        Su buscador no soporta este audio html5.
+    </audio>
 
     <!--llamado al javascript-->
     <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
@@ -90,5 +118,3 @@
 </body>
 
 </html>
-<link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
-<link href="./css/css.css" rel="stylesheet" />

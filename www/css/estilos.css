@@ -1,6 +1,6 @@
 h2{
     font-weight: bold;
-    font-size: 200px; 
+    font-size: 100px; 
 }
 
 
@@ -14,8 +14,7 @@ body{
 .emis{
     display: table;
     margin: 0 auto;
-    text-align: center;
-   
+    text-align: center;   
 
 }
 
@@ -24,7 +23,7 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(54, 23, 190);
     color: white;
     text-align: center;
  }
@@ -39,12 +38,12 @@ body{
     color: brown;
 }
 
-#volumemas{
+#Sig_emisora{
     font-size: 50px;
     color: brown;
 }
 
-#volumemenos{
+#Ant_emisora{
     font-size: 50px;
     color: brown;
 }
@@ -59,7 +58,6 @@ body{
     width: 100%;
     
     }
-
     
     .custom-range {
     
@@ -72,18 +70,14 @@ body{
     -webkit-transition: .2s;
     transition: opacity .2s;
     
-    }
-    
-    
+    }  
     
     
     .custom-range:hover {
     
     opacity: 1;
     
-    }
-    
-    
+    }     
     
     
     .custom-range::-webkit-slider-thumb {
@@ -95,9 +89,7 @@ body{
     background: #4CAF50;
     cursor: pointer;
     
-    }
-    
-    
+    }      
     
     
     .custom-range::-moz-range-thumb {
@@ -111,8 +103,60 @@ body{
     cursor: pointer;
     
     }
-    
 
+    audio{
+        display: none;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .social{
+        position: fixed;
+        left: 0;
+        top: 35%;
+        font-size: 1.5rem;
+        display: flex;
+        z-index: 2000;
+        flex-direction: column;
+        align-items: flex-end;
+    
+    }
+    
+    .social ul {
+        list-style: none;
+    
+    }
+    
+    .social ul li a{
+        display: inline-block;
+        color: #fff;
+        background: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+        -webkit-transition: all 500 ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+    
+    }
+    
+    .social ul li .icon-facebook2 {border-radius: 0 1rem 0 0; background: #3b5998 ;}    
+    .social ul li .icon-instagram {background: #e4405f ;}
+    .social ul li .icon-twitter {background: #00abf0 ;}
+    .social ul li .icon-whatsapp {border-radius: 0 0 1rem 0; background: #25D366 ;}
+    
+    .social ul li a:hover{
+        padding-right: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);  
+    
+    }
+    
 
 
 
